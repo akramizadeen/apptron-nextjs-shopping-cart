@@ -1,4 +1,5 @@
 import { useCart } from "@/app/_context/CartContext";
+import { ArrowRight } from "lucide-react";
 import React from "react";
 
 const CartSummary = () => {
@@ -40,6 +41,12 @@ const CartSummary = () => {
             <p>Total</p>
             <p>LKR {total}.00</p>
         </div>
+        <span className="w-auto mt-5 mx-10 flex items-center justify-center gap-2 py-2 px-4 bg-linear-to-r from-blue-800 to-purple-800 hover:from-purple-700 hover:to-blue-700 transition-all duration-300 text-slate-100 cursor-pointer rounded-full">
+            <span className="">
+                Checkout
+            </span>
+            <ArrowRight />
+        </span>
     </div>
   );
 };
